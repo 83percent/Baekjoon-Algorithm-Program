@@ -70,6 +70,5 @@ public class Executor {
             System.out.println("--------------------------------------------------");
 
         }
-        solution.invoke(P1, "ABC");
     }
 }
