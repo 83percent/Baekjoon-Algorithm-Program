@@ -33,11 +33,11 @@ public class BaekjoonSampleParser extends Parser {
             String content  = null;
             switch(i % 2) {
                 case 0 -> { // input
-                    content = element.html();
+                    content = element.html().replaceAll("\r", "");
                     dataName = String.join("-", "INPUT", problemNumber, String.valueOf(fileIndex)) + ".txt";
                 }
                 case 1 -> { // output
-                    content = element.html();
+                    content = element.html().replaceAll("\r", "");
                     dataName = String.join("-", "OUTPUT", problemNumber, String.valueOf(fileIndex)) + ".txt";
                     fileIndex++;
                 }
